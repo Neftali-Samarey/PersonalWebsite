@@ -1,0 +1,26 @@
+
+ <section class="page_body">
+     <div class="section_container">
+        {{#carousel-container transitionInterval=400 as |ui controls|}}
+        <div class="carousel-body">
+        {{#ui.item}}
+        Emberjs
+        {{/ui.item}}
+        {{#ui.item}}
+        Reactjs
+        {{/ui.item}}
+        {{#ui.item}}
+        Angularjs
+        {{/ui.item}}
+  </div>
+ 
+  <button onclick={{controls.previous}}>
+    Slide Left
+  </button>
+  <button onclick={{controls.next}}>
+    Slide Right
+  </button>
+{{/carousel-container}}
+     </div>
+ </section>
+{{!-- {{yield}} --}}

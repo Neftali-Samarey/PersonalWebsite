@@ -2,13 +2,13 @@ import Component from '@ember/component';
 
 export default Component.extend({
 
+  /*https://www.learnhowtoprogram.com/ember-js/ember-js/components-delete*/
 
  didRender() {
   animate();
  }
 
 });
-
 
 function animate() {
   console.log("Loaded");
