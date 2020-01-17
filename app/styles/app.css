@@ -1,0 +1,189 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Fonts */
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.gelasio {
+  font-family: 'Gelasio', serif;
+}
+
+/* Text color */
+.white {
+  color: #fff;
+}
+.black {
+  color: #000;
+}
+.modernBlack {
+  color: #393939;
+}
+
+.smoothBlue {
+  color: #2D3B4B;
+}
+
+.brandRedDark {
+  color: #BC3249;
+}
+
+/* Background colors */
+.brandRed {
+  background-color: #eb3f5c;
+}
+
+.patternBackground {
+  background-image: url('../assets/background_assets/geometric.png');
+  background-repeat: repeat;
+  background-color: rgba(35, 37, 48, 1);
+}
+
+.cityBackground {
+  background-image: url('../assets/backgrounds/modern.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.top_container {
+  height: 100vh;
+}
+
+/* Height is 20 of the viewport height */
+.photo_top_container {
+  /* border: 1px solid green; */
+  height: 40vh;
+  align-items: center; /* For vertical align */
+  display: flex;
+
+  /* justify-content: center; <- for horizontal align */
+
+}
+
+.image_container {
+  width: 150px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile_image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #d9d9d9;
+}
+
+
+/* Height is 80 of the viewport height */
+.bottom_profile_description_container {
+  /* border: 1px solid blue; */
+  height: 60vh;
+  text-align: center;
+}
+
+.inner_container_description {
+  /* border: 1px solid red; */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* UIColor(r: 255, g: 26, b: 65) */
+#title_name {
+  font-size: 56px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(120deg, #eb3f5c 0%, #eb3f5c 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  /* transition: background-size 0.25s ease-in; */
+}
+#profession_name {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.social_icons {
+  padding: 30px 0 30px 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+a {
+  padding: 8px;
+}
+/* a:hover {
+  background-color: #eb3f5c;
+} */
+
+.social_media_icon {
+  height: 42px;
+  width: 42px;
+}
+
+/* Section Styling */
+.section_container {
+  display: flex;
+}
+
+.left_container {
+  text-align: center;
+  width: 30%;
+  height: 100vh;
+}
+/* Desktop inner content styles. Mobile styling will be handled via media queries */
+.inner_left_content {
+  padding: 30px 0 30px 0;
+  font-size: 35px;
+}
+.right_container {
+  /* padding: 30px 30px 30px 30px; */
+  width: 70%;
+  height: 100vh;
+}
+
+.inner_right_content {
+  font-size: 25px;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  line-height: 1.2;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+  /* Stack elements on mobile */
+  .section_container {
+    display: block;
+  }
+  .left_container {
+    width: 100%;
+    height: 15vh;
+  }
+
+  /* No inner left class css block */
+
+  .right_container {
+    width: 100%;
+  }
+  .inner_right_content {
+    padding: 15px;
+    font-size: 21px;
+  }
+}

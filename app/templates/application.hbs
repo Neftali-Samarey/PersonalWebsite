@@ -1,5 +1,54 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+{{!-- Feel free to remove this! --}}
+<div class="container ">
+  <div class="overlay_top_container">
+    <div class="top_container cityBackground">
+      <div class="photo_top_container">
+        <div class="image_container">
+          <img class="profile_image" src="assets/profile/default.jpg">
+        </div>
+      </div>
+      <div class="bottom_profile_description_container">
+        <div class="inner_container_description gelasio modernBlack">
+          <span id="title_name">Neftali Samarey</span><br>
+          <span id="profession_name">iOS Developer</span>
+          <div class="social_icons">
+            <ul>
+              <li><a href=""><img class="social_media_icon" src="assets/icons/socialmedia/linkedin.png"></a></li>
+              <li><a href=""><img class="social_media_icon" src="assets/icons/socialmedia/git.png"></a></li>
+              <li><a href=""><img class="social_media_icon" src="assets/icons/socialmedia/appstore.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- <section class="page_body">
+    <div class="section_container">
+      <!-- left container will stack on mobile -->
+      <div class="left_container brandRed">
+        <div class="inner_left_content brandRedDark gelasio">
+          <!-- Handle ember data -->
+          Intro
+          </div>
+      </div>
+      <div class="right_container">
+        <div class="inner_right_content smoothBlue">
+          <!-- Handle ember data -->
+           Hi there, I am Neftali, I am based in New York city and currently interning in eCommerce.<br>
+          
+           <br><br>
+           I have experience in Front-end development (this site is running on Ember JS) and iOS development and some
+           experience with shopify development.
+        </div>
+      </div>
+    </div>
+  </section> --}}
+
+  <PageSection/>
+
+</div>
+
+{{!-- {{outlet}} --}}
