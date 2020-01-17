@@ -1,14 +1,17 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  actions: {
-    animate(){
-      
-    }
-  }
+
+
+ didRender() {
+  animate();
+ }
+
 });
 
+
 function animate() {
+  console.log("Loaded");
   var elem = document.getElementById("bar");   
   var width = 1;
   var id = setInterval(frame, 10);
