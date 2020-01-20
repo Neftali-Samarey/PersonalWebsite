@@ -1,26 +1,18 @@
 
- <section class="page_body">
-     <div class="section_container">
-        {{#carousel-container transitionInterval=400 as |ui controls|}}
-        <div class="carousel-body">
-        {{#ui.item}}
-        Emberjs
-        {{/ui.item}}
-        {{#ui.item}}
-        Reactjs
-        {{/ui.item}}
-        {{#ui.item}}
-        Angularjs
-        {{/ui.item}}
-  </div>
- 
-  <button onclick={{controls.previous}}>
-    Slide Left
-  </button>
-  <button onclick={{controls.next}}>
-    Slide Right
-  </button>
-{{/carousel-container}}
-     </div>
+ <!-- This section will render components in a slider form -->
+ <section class="page_body" style="text-align: center;">
+   <h1 class="heighten">Projects</h1>
+   <ul>
+    {{#each @model as |scientist|}}
+      <li>{{scientist}}</li>
+    {{/each}}
+  </ul> 
+   {{!-- {{#carousel-container transitionInterval=200 as |ui controls|}}
+    {{#each this.model.items as |item|}}
+      {{#ui.item}}
+        Inner Loop
+       {{/ui.item}}
+     {{/each}}
+   {{/carousel-container}} --}}
  </section>
-{{!-- {{yield}} --}}
+{{yield}}

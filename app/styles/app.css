@@ -32,10 +32,22 @@
   color: #BC3249;
 }
 
+/* Header definitions */ 
+h1, h2, h3, h4, h5, h5 {
+  color: #393939;
+  font-family: 'Gelasio', serif;
+  font-weight: 400;
+}
+
+.heighten {
+  font-size: 30px;
+}
+
 /* Background colors */
 .brandRed {
   background-color: #eb3f5c;
 }
+
 
 .patternBackground {
   background-image: url('../assets/background_assets/geometric.png');
