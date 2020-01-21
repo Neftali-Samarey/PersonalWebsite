@@ -8,7 +8,7 @@ import { A } from '@ember/array';
 export default Component.extend({
 
   items : [
-    "Project 1", "Project 2", "Project 3"
+    "blue", "green", "yellow"
   ],
  
  actions: {

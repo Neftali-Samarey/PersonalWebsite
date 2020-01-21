@@ -190,6 +190,7 @@ a {
 /* Buttons */
 #leftBtn {
   position: relative;
+  left: 0;
   border: none;
   background-color: yellow;
   height: 80px; 

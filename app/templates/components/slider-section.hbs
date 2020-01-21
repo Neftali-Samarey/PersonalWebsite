@@ -11,7 +11,7 @@
     <!-- Slider container -->
     {{#each this.items as |item|}}
       {{#ui.item}}
-       <ProjectCanvas @projectTitle="{{item }}" />
+       <ProjectCanvas @projectTitle="{{item}}" @bgColor="{{item}}"/>
       {{/ui.item}}
       
     {{/each}}
