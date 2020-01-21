@@ -2,17 +2,24 @@
  <!-- This section will render components in a slider form -->
  <section class="page_body" style="text-align: center;">
    <h1 class="heighten">Projects</h1>
-   <ul>
-    {{#each @model as |scientist|}}
-      <li>{{scientist}}</li>
-    {{/each}}
-  </ul> 
-   {{!-- {{#carousel-container transitionInterval=200 as |ui controls|}}
-    {{#each this.model.items as |item|}}
-      {{#ui.item}}
-        Inner Loop
-       {{/ui.item}}
-     {{/each}}
-   {{/carousel-container}} --}}
+  <!-- Display a slider componet  -->
+  {{#carousel-container transition-interval=400}}
+  {{#carousel-body}}
+        {{#each model as |rentalUnit|}}
+            {{rental-listing rental=rentalUnit}}
+        {{/each}}
+    {{/carousel-body}}
+
+    <!-- Buttons -->
+     <button id="leftBtn" {{action 'back'}}>&#x3c; Previous</button>
+      <button id="rightBtn" {{action 'next'}}>Next &#x3e;</button>
+    {{!-- {{#carousel-arrow direction="left" tagName="button"}}
+        &#x3c;
+    {{/carousel-arrow}}
+    {{#carousel-arrow direction="right" tagName="button"}}
+       &#x3e;
+    {{/carousel-arrow}} --}}
+  {{/carousel-container}}
+  {{slider-page}}
  </section>
 {{yield}}
