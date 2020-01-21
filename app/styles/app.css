@@ -182,9 +182,27 @@ a {
 
 /* Canvas styling */
 .canvas-container {
-  background-color: #d9d9d9; /* temporay for viewing purposes */
+  border: 1px solid #000;
   height: 100vh;
   width: 100%;
+}
+
+/* Buttons */
+#leftBtn {
+  position: relative;
+  border: none;
+  background-color: yellow;
+  height: 80px; 
+  width: 40px;
+}
+
+#rightBtn {
+  position: relative;
+  border: none;
+  background-color: teal;
+  height: 80px; 
+  width: 40px;
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 

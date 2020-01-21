@@ -3,11 +3,12 @@
   
 */
 import Component from '@ember/component';
+import { A } from '@ember/array';
 
 export default Component.extend({
 
   items : [
-    "Item 1", "Item 2", "Item 3", "Item 4", "Item 5"
+    "Project 1", "Project 2", "Project 3"
   ],
  
  actions: {
