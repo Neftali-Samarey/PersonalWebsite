@@ -3,16 +3,20 @@
  <section class="page_body" style="text-align: center;">
    <h1 class="heighten">Projects</h1>
   <!-- Display a slider componet  -->
-  {{#carousel-container transition-interval=400}}
-  {{#carousel-body}}
-        {{#each model as |rentalUnit|}}
-            {{rental-listing rental=rentalUnit}}
-        {{/each}}
-    {{/carousel-body}}
+  {{#carousel-container transitionInterval=200 as |ui controls|}}
+  
+    {{#each this.model.items as |item|}}
+      {{#ui.item}}
+       
+      {{/ui.item}}
+      <!-- Buttons -->
+      <button id="leftBtn" {{action 'back'}}>&#x3c; Previous</button>
+      <button id="rightBtn" {{action 'next'}}>Next &#x3e;</button>
+    {{/each}}
+
 
     <!-- Buttons -->
-     <button id="leftBtn" {{action 'back'}}>&#x3c; Previous</button>
-      <button id="rightBtn" {{action 'next'}}>Next &#x3e;</button>
+     
     {{!-- {{#carousel-arrow direction="left" tagName="button"}}
         &#x3c;
     {{/carousel-arrow}}
@@ -20,6 +24,12 @@
        &#x3e;
     {{/carousel-arrow}} --}}
   {{/carousel-container}}
+
   {{slider-page}}
+
+<!-- TESTING A CANVAS FOR A PROJECT SLIDER -->
+<ProjectCanvas @projectTitle="Tipie" />
+<ProjectCanvas @projectTitle="Samarey.me" />
+
  </section>
 {{yield}}

@@ -5,6 +5,10 @@
 import Component from '@ember/component';
 
 export default Component.extend({
+
+  items : [
+    "Item 1", "Item 2", "Item 3", "Item 4", "Item 5"
+  ],
  
  actions: {
    next() {
