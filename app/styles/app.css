@@ -187,6 +187,21 @@ a {
   width: 100%;
 }
 
+.elementToFadeInAndOut {
+
+  /* -webkit-animation: fadeinout 1s linear forwards; */
+  animation: fadeinout 1s linear forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
 /* Buttons */
 #leftBtn {
   position: relative;
