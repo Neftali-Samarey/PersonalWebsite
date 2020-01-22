@@ -187,9 +187,24 @@ a {
   width: 100%;
 }
 
+/* Fade transition */
 .elementToFadeInAndOut {
 
-  /* -webkit-animation: fadeinout 1s linear forwards; */
+	transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition:opacity 1s ease-in-out;
+}
+
+/* #myBox:checked ~ .animated {
+  opacity: 0;
+}
+#myBox ~ .animated {
+   opacity: 1;
+} */
+
+
+/* .elementToFadeInAndOut {
+  -webkit-animation: fadeinout 1s linear forwards;
   animation: fadeinout 1s linear forwards;
   opacity: 0;
 }
@@ -200,7 +215,7 @@ a {
 
 @keyframes fadeinout {
   50% { opacity: 1; }
-}
+} */
 
 /* Buttons */
 #leftBtn {
