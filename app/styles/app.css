@@ -13,6 +13,10 @@
   font-family: 'Gelasio', serif;
 }
 
+.bolder {
+  font-weight: 600!important;
+}
+
 /* Text color */
 .white {
   color: #fff;
@@ -31,6 +35,7 @@
 .brandRedDark {
   color: #BC3249;
 }
+
 
 /* Header definitions */ 
 h1, h2, h3, h4, h5, h5 {
@@ -182,14 +187,14 @@ a {
 
 /* Canvas styling */
 .canvas-container {
-  border: 1px solid #000;
+  
   height: 100vh;
   width: 100%;
 }
 
-.elementToFadeInAndOut {
+/* .elementToFadeInAndOut {
 
-  /* -webkit-animation: fadeinout 1s linear forwards; */
+  
   animation: fadeinout 1s linear forwards;
   opacity: 0;
 }
@@ -200,20 +205,45 @@ a {
 
 @keyframes fadeinout {
   50% { opacity: 1; }
-}
+} */
 
 /* Buttons */
+
+
+/* Make left button adjust to the left with some spacing*/
+.leftButton {
+  left: 10px;
+  right: auto;
+}
+
 #leftBtn {
-  position: relative;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+
   border: none;
   background-color: yellow;
+  justify-content: center;
   height: 80px; 
   width: 40px;
 }
 
+/* Ajust right button to adjust on the right hand side with 10 pixels in spacing to the right*/
+.rightButton {
+  right: 10px;
+  left: auto;
+}
+
 #rightBtn {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: none;
   background-color: teal;
   height: 80px; 
