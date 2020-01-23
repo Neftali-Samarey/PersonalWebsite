@@ -3,15 +3,15 @@
  <section class="page_body" style="text-align: center;">
    <h1 class="heighten">Projects</h1>
   <!-- Display a slider componet  -->
-  {{#carousel-container transitionInterval=200 as |ui controls|}}
+  {{#carousel-container transitionInterval=300 as |ui controls|}}
     <!-- Buttons outside of the loop -->
-    <button id="leftBtn" onclick={{controls.previous}}>&#x3c;</button>
-    <button id="rightBtn" onclick={{controls.next}}>&#x3e;</button>
+    <button class="leftButton" id="leftBtn" onclick={{controls.next}}> &#x3c;</button>
+    <button class="rightButton" id="rightBtn" onclick={{controls.previous}} >&#x3e;</button>
     
     <!-- Slider container -->
-    {{#each this.items as |item|}}
+    {{#each this.projects as |itemObject|}}
       {{#ui.item}}
-       <ProjectCanvas @projectTitle="{{item}}" @bgColor="{{item}}"/>
+       <ProjectCanvas @projectTitle="{{itemObject.name}}" @bgColor="{{itemObject.backgroundThemeColor}}" @projectDescription={{itemObject.description}}/> <!-- Call the method per each transition -->
       {{/ui.item}}
       
     {{/each}}
