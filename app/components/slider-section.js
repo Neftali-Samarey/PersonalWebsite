@@ -12,14 +12,6 @@ class Project {
   constructor(projectName) {
     this._projectName = projectname;
   }
-
-  get() {
-    alert("Project name is " + this._projectName);
-  }
-  set() {
-    // Set the project name during the initializing of the class 
-  }
-
   // Public methods for the project
 }
 
