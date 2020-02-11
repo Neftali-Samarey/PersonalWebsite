@@ -205,6 +205,14 @@ a {
 }
 
 
+
+/* Progress Bar styling */
+.progress-ring-circle {
+  background-color: red;
+  stroke-dasharray: 10 20;
+}
+
+
 /* Buttons */
 
 button {

@@ -10,6 +10,7 @@ let projectCount = 0;
 /* Blueprint for the class object */
 class Project {
   constructor(projectName) {
+    
     this._projectName = projectname;
   }
   // Public methods for the project
